@@ -1,0 +1,252 @@
+		html{
+			font-family: Caudex, sans-serif;
+		}
+		body{
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		footer{
+			border-top: 1px solid white;
+			margin-top: auto;
+			text-align: center;
+		}
+		p
+		{
+			font-family: Raleway, sans-serif;
+			font-size: 18px;
+			color: white;
+			text-align: center;
+		}
+		h1
+		{
+			font-family: Caudex, sans-serif;
+			font-size: 36px;
+			color: white;
+		}
+		h2
+		{
+			font-family: Caudex, sans-serif;
+			font-size: 24px;
+			color: white;
+			text-align: center;
+		}
+		h3
+		{
+			font-family: Caudex, sans-serif;
+			font-size: 21px;
+			color: white;
+		}
+		.nav
+		{
+			position: fixed;
+    		padding-top: 5px;
+    		padding-bottom: 10px;
+    		width: 100%;
+			display: flex;
+			z-index: 111;
+			background: black;
+			border-bottom: 1px solid white;
+		}
+		.nav a
+		{
+			display: inline-block;
+			color: white;
+			text-align: center;
+			padding: 10px 20px;
+			text-decoration: none;
+			font-size: 12px;
+			font-family: trebuchet ms, sans-serif;
+		}
+		.nav a:hover
+		{
+			text-decoration: line-through; 
+			color: white;
+		}
+		.center 
+		{
+			display: block;
+			margin-left: auto;
+			margin-top: 10px;
+			margin-right: auto;
+			text-align: center;
+		}
+		.container{
+			color: black;
+			margin-right: 250px;
+			margin-left: 250px;
+		}
+		.div{
+			background: black;
+			padding-right: 15px;
+    		padding-left: 15px;
+    		margin-right: auto;
+    		margin-left: auto;
+		}
+		.centered{
+			position: absolute;
+			text-align: center;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.about-me{
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem;
+		}
+		.btn {
+    		font-size: 11px;
+    		border-radius: 30px;
+    		padding-top: 15px;
+    		padding-bottom: 15px;
+    		padding-left: 30px;
+    		padding-right: 30px;
+    		letter-spacing: .1rem;
+    		text-transform: uppercase;
+    		border: 2px solid rgba(255, 255, 255, 0.3);
+    		font-weight: 900;
+    		color: #fff;
+    		text-decoration: none;
+		}
+		#button:hover {
+			border: 2px solid rgba(255, 255, 255, 1);
+			cursor: pointer;
+		}
+		.my-services{
+			flex-basis: 100%;
+			margin-top: px;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			grid-gap: 2.5rem;
+			text-align: center;
+		}
+
+		.services{
+			flex-basis: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 2rem;
+		}
+
+		.skills{
+			width: 100%;
+			padding: 15px 30px;
+			box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+		}
+		.skills .bar{
+			margin: 20px 0;
+		}
+		.skills .bar:first{
+			margin-top: 0px;
+		}
+		.skills .bar .info span{
+			font-weight: 500;
+			font-family: Raleway, sans-serif;
+		}
+		.skills .bar .progress-line{
+			height: 10px;
+			width: 100%;
+			position: relative;
+			transform: scaleX(0);
+			transform-origin: left;
+			animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+		}
+		@keyframes animate{
+			100%{
+				transform: scaleX(1);
+			}
+		}
+
+		.bar .progress-line span{
+			height: 100%;
+			width: 80%;
+			background: white;
+			position: absolute;
+		}
+		.bar .progress-line span::before{
+			position: absolute;
+			content: "";
+			right: 0;
+			top: -8px;
+			height: 0;
+			width: 0;
+			border: 7px solid transparent;
+			border-bottom-width: 0px;
+			border-right-width: 0px;
+			border-top-color: white;
+		}
+		.progress-line span::after{
+			position: absolute;
+			right: 0;
+			top: -28px;
+			background: white;
+			padding: 1px 8px;
+		}
+		.progress-line.html span::after{
+			content: "89 %";
+		}
+		.progress-line.css span::after{
+			content: "87 %";
+		}
+		.progress-line.js span::after{
+			content: "83 %";
+		}
+		.progress-line.html span{
+			width: 90%;
+		}
+		.progress-line.css span{
+			width: 85%;
+		}
+		.progress-line.js span{
+			width: 80%;
+		}
+		.img-container{
+			display: flex; 
+  			max-width: 800px; 
+  			width: 100%;
+  			flex-wrap: wrap; 
+  			justify-content: center; 
+    		margin-left: auto; 
+    		margin-right: auto;
+		}
+		#selectImg:hover {
+			opacity: 0.7;
+			cursor: pointer;
+		}
+		.images
+    	{
+      		width: 200px;
+      		object-fit: cover;
+      		object-position: bottom;
+      		padding: 5px;
+    	}
+    	.contacts
+    	{
+    		font-family: Raleway, sans-serif;
+			font-size: 24px;
+			color: white;
+			text-align: center;
+			padding-bottom: 5px;
+    	}
+    	#selectContacts:hover {
+    		text-decoration: line-through;
+			cursor: pointer;
+		}
+		a{
+			text-decoration: none;
+		}
+		.cover
+		{
+			max-width: 100%;
+			background: black;
+		}
+
+
+
+
+
